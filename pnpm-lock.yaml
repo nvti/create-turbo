@@ -77,7 +77,7 @@ catalogs:
 overrides:
   '@eslint/core': 0.17.0
   lightningcss: 1.30.2
-  vite: 8.0.5
+  vite: 8.0.6
 
 importers:
 
@@ -3682,7 +3682,7 @@ packages:
     resolution: {integrity: sha512-J3oawV8uBRBbPoLgMdyHt+LxzTNuWRKNJJuCLWsm/yq6v0IQSvIVCgfD2+liIiSnDPxGZ8ExduPXy8IzS70eXw==}
     engines: {node: '>=12'}
     peerDependencies:
-      vite: 8.0.5
+      vite: 8.0.6
 
   '@tanstack/form-core@1.24.4':
     resolution: {integrity: sha512-+eIR7DiDamit1zvTVgaHxuIRA02YFgJaXMUGxsLRJoBpUjGl/g/nhUocQoNkRyfXqOlh8OCMTanjwDprWSRq6w==}
@@ -3739,7 +3739,7 @@ packages:
     peerDependencies:
       react: '>=18.0.0 || >=19.0.0'
       react-dom: '>=18.0.0 || >=19.0.0'
-      vite: 8.0.5
+      vite: 8.0.6
 
   '@tanstack/react-store@0.7.7':
     resolution: {integrity: sha512-qqT0ufegFRDGSof9D/VqaZgjNgp4tRPHZIJq2+QIHkMUtHjaJ0lYrrXjeIUJvjnTbgPfSD1XgOMEt0lmANn6Zg==}
@@ -3767,7 +3767,7 @@ packages:
     peerDependencies:
       '@rsbuild/core': '>=1.0.2'
       '@tanstack/react-router': ^1.135.2
-      vite: 8.0.5
+      vite: 8.0.6
       vite-plugin-solid: ^2.11.10
       webpack: '>=5.92.0'
     peerDependenciesMeta:
@@ -3798,7 +3798,7 @@ packages:
     resolution: {integrity: sha512-C4lP5YkkZiqyZYpvjf3h7aCyGTPPL7/5ZaEJe4q7W94HbzXqy2b5VGz5lghQ3kZHfohgO57BdKPTxgats4YaKw==}
     engines: {node: '>=22.12.0'}
     peerDependencies:
-      vite: 8.0.5
+      vite: 8.0.6
 
   '@tanstack/start-server-core@1.135.2':
     resolution: {integrity: sha512-L40FFKTVD5Lbx+HrLH+VyMQbiIldB6kYa24SIahnUDt5LlJnLgHRNBPbJkhVLeFAxad7gUaeEQkVyZrZ6MB/PQ==}
@@ -7806,7 +7806,7 @@ packages:
   vitefu@1.1.1:
     resolution: {integrity: sha512-B/Fegf3i8zh0yFbpzZ21amWzHmuNlLlmJT6n7bu5e+pCHUKQIfXSYokrqOBGEMMe9UG2sostKQF9mml/vYaWJQ==}
     peerDependencies:
-      vite: 8.0.5
+      vite: 8.0.6
     peerDependenciesMeta:
       vite:
         optional: true
@@ -9625,7 +9625,7 @@ snapshots:
       metro-babel-transformer: 0.83.5
       metro-cache: 0.83.5
       metro-cache-key: 0.83.5
-      metro-config: 0.83.5(bufferutil@4.0.8)(utf-8-validate@6.0.4)
+      metro-config: 0.83.5(bufferutil@4.0.8)
       metro-core: 0.83.5
       metro-file-map: 0.83.5
       metro-minify-terser: 0.83.5
@@ -11130,7 +11130,7 @@ snapshots:
       debug: 4.4.3
       invariant: 2.2.4
       metro: 0.83.5(bufferutil@4.0.8)
-      metro-config: 0.83.5(bufferutil@4.0.8)(utf-8-validate@6.0.4)
+      metro-config: 0.83.5(bufferutil@4.0.8)
       metro-core: 0.83.5
       semver: 7.7.3
     transitivePeerDependencies:
@@ -14829,6 +14829,22 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  metro-config@0.83.5(bufferutil@4.0.8):
+    dependencies:
+      connect: 3.7.0
+      flow-enums-runtime: 0.0.6
+      jest-validate: 29.7.0
+      metro: 0.83.5(bufferutil@4.0.8)
+      metro-cache: 0.83.5
+      metro-core: 0.83.5
+      metro-runtime: 0.83.5
+      yaml: 2.8.1
+    transitivePeerDependencies:
+      - bufferutil
+      - supports-color
+      - utf-8-validate
+    optional: true
+
   metro-config@0.83.5(bufferutil@4.0.8)(utf-8-validate@6.0.4):
     dependencies:
       connect: 3.7.0
@@ -14981,7 +14997,7 @@ snapshots:
       metro-babel-transformer: 0.83.5
       metro-cache: 0.83.5
       metro-cache-key: 0.83.5
-      metro-config: 0.83.5(bufferutil@4.0.8)(utf-8-validate@6.0.4)
+      metro-config: 0.83.5(bufferutil@4.0.8)
       metro-core: 0.83.5
       metro-file-map: 0.83.5
       metro-resolver: 0.83.5
