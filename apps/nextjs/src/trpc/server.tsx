@@ -5,6 +5,7 @@ import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 import { createTRPCOptionsProxy } from "@trpc/tanstack-react-query";
 
 import type { AppRouter } from "@acme/api";
+import type { Auth } from "@acme/auth";
 import { appRouter, createTRPCContext } from "@acme/api";
 
 import { auth } from "~/auth/server";
@@ -20,7 +21,7 @@ const createContext = cache(async () => {
 
   return createTRPCContext({
     headers: heads,
-    auth,
+    auth: auth as unknown as Auth,
   });
 });
 
